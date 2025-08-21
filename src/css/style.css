@@ -279,6 +279,10 @@ body {
   #hero2.invert .hero-image2 {
     order: 2;
   }
+
+  .hero-image2 img {
+    max-width: 500px;
+  }
 }
 
 
