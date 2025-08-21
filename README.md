@@ -17,6 +17,22 @@ Uma landing page moderna para apresentar serviços de contratação de modelos, 
 ---
 
 ## 🖼️ Estrutura do Projeto
+/src
+/assets
+/images # Imagens da landing page
+/icons # Ícones da seção de serviços
+/css
+style.css # Estilos da página
+/js
+javascript.js # Script para menu toggle e dropdown
+index.html # Página principal
+README.md
+
+---
+
+📸 Preview
+
+![Landing Page Preview](./src/assets/screenshots/Screenshotmodels_2)
 
 
 ---
