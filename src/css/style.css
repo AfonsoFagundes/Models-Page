@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'poppins', sans-serif;
   line-height: 1.5;
   background: linear-gradient(to right, #ffffff, #f2f2f2);
   color: #333;
@@ -202,15 +202,27 @@ body {
   padding-top: 50px;
 }
 
+.hero-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 .hero-image img {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
+  border: 2px solid #be6ec5;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+.hero-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 5px rgb(207, 39, 212);
+}
 
 @media (min-width: 768px) {
+
   #hero {
     grid-template-columns: 1fr 2fr;
     gap: 32px;
@@ -243,15 +255,23 @@ body {
 }
 
 .hero-text2{
-  text-align: right;
-
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .hero-image2 img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; 
+  border-radius: 8px;
+  border:3px solid #be6ec5;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero-image2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 5px rgb(207, 39, 212);
 }
 
 @media (min-width: 768px) {
@@ -282,6 +302,7 @@ body {
 
   .hero-image2 img {
     max-width: 500px;
+
   }
 }
 
@@ -296,7 +317,7 @@ body {
   border: 3px solid transparent;
   border-radius: 20px;
   background: linear-gradient(#fff, #fff) padding-box,
-              linear-gradient(90deg, #be6ec5, #ff8cc1) border-box;
+              linear-gradient(90deg, #f57a07, #ff8cc1) border-box;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -398,6 +419,7 @@ body {
 
 .model-card:hover {
   transform: translateY(-5px);
+
 }
 
 .models-img {
