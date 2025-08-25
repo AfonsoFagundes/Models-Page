@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>ModelLink - ML</title>
   </head>
   <body>
@@ -21,8 +22,8 @@
           <li>
             <a href="#services">Services</a>
             <ul class="submenu">
-              <li><a href="#">Eventos</a></li>
               <li><a href="#hero-galery">Models</a></li>
+              <li><a href="#hero-client">Clients</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </li>
@@ -133,42 +134,51 @@
 <section id="hero-client">
   <h2>Brands We Work With</h2>
   <p>Working side by side with brands that inspire.</p>
- <div class="client-container">
 
-     <div class="client-card">
-      <img class="client-img" src="src/assets/clients/Netflix-logo.png" alt="logo-netflix">
-      <div class="client-info">
-        <h3>Netflix</h3>
-      </div>
-     </div>
-
-       <div class="client-card">
-          <img class="client-img" src="src/assets/clients/primevideo.png" alt="logo-primevideo">
-        <div class="client-info">
-          <h3>Amazon prime</h3>
-        </div>
-         </div>
-             
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
         <div class="client-card">
-          <img class="client-img" src="src/assets/clients/globoplay.png" alt="logo-globoplay">
-          <div class="client-info">
-            <h3>GloboPlay</h3>
-          </div> 
-          </div>
+          <img class="client-img" src="src/assets/clients/Netflix-logo.png" alt="Netflix">
+          <div class="client-info"><h3>Netflix</h3></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client-card">
+          <img class="client-img" src="src/assets/clients/primevideo.png" alt="Amazon Prime">
+          <div class="client-info"><h3>Amazon</h3></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client-card">
+          <img class="client-img" src="src/assets/clients/globoplay.png" alt="GloboPlay">
+          <div class="client-info"><h3>GloboPlay</h3></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client-card">
+          <img class="client-img" src="src/assets/clients/versace.png" alt="Versace">
+          <div class="client-info"><h3>Versace</h3></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client-card">
+          <img class="client-img" src="src/assets/clients/disney.png" alt="Logo-Disney">
+          <div class="client-info"><h3>Disney</h3></div>
+        </div>
+      </div>
 
-          <div class="client-card">
-          <img class="client-img" src="src/assets/clients/versace.png" alt="logo-versace">
-          <div class="client-info">
-            <h3>Versace</h3>
-           </div> 
-          </div>
+      <div class="swiper-slide">
+        <div class="client-card">
+          <img class="client-img" src="src/assets/clients/prada.png" alt="Logo-Prada">
+          <div class="client-info"><h3>Prada</h3></div>
+        </div>
+      </div>
 
-          <div class="client-card">
-          <img class="client-img" src="src/assets/clients/disney.png" alt="logo-disney">
-          <div class="client-info">
-            <h3>Disney</h3>
-          </div> 
+
+    </div>
   </div>
+  <div class="swiper-paginations"></div>
 </section>
 
 
@@ -177,5 +187,7 @@
     </main>
     <footer></footer>
     <script src="src/js/javascript.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="src/js/swiper.js"></script>
   </body>
 </html>

@@ -456,11 +456,11 @@ body {
 
 /* section-3 */ 
 
+/* section-3 */ 
 #hero-client {
   padding: 40px;
   text-align: center;
   background: #fafafa;
-  
   border-radius: 20px;
   background: linear-gradient(#f1ecec, #f0efef) padding-box,
               linear-gradient(90deg, #fdfbfd, #c282ca) border-box;
@@ -480,10 +480,15 @@ body {
   margin-bottom: 30px;
 }
 
-.client-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+/* swiper precisa dessas classes */
+.swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
 }
 
 .client-card {
@@ -494,11 +499,12 @@ body {
   cursor: pointer;
   background: #fff;
   transition: transform 0.3s;
+  padding: 20px;
+  max-width: 220px;
 }
 
 .client-card:hover {
   transform: translateY(-5px);
-
 }
 
 .client-img {
@@ -508,7 +514,21 @@ body {
   transition: transform 0.5s ease;
 }
 
-.client-info {
- back
-  
+.client-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
 }
+
+/* Swiper setas e bullets */
+.swiper-button-next,
+.swiper-button-prev
+ {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background-color: #be6ec5;
+}
+
+
