@@ -403,7 +403,7 @@ body {
 
 .galery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
   gap: 20px;
 }
 
@@ -477,6 +477,7 @@ body {
   font-size: 18px;
   color: black;
   margin-bottom: 30px;
+ 
 }
 
 .swiper {
@@ -541,6 +542,117 @@ body {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: black /* bolinha ativa verde */
 }
+
+/*Section 4 */ 
+
+#hero-about h1 {
+  padding: 10px;
+  margin: 15px 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-info img {
+  max-width: 50%;
+  padding-top: 40px;
+  border-radius: 30px;
+}
+
+.about-info p {
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-info {
+    flex-direction: column; /
+    text-align: center;
+  }
+
+  .about-info img {
+    max-width: 90%;  
+    padding-top: 20px;
+  }
+
+  .about-info p {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  #hero-about h1 {
+    font-size: 36px; 
+  }
+}
+
+/* fOOTER */ 
+
+#hero-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, #f2f2f2, #be6ec5);
+  color: #333;
+}
+
+#hero-footer h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  #hero-footer h2 {
+    font-size: 32px;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer-info h3 {
+    font-size: 20px;
+  }
+  .footer-info p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-footer {
+    padding: 50px 50px;
+  }
+  #hero-footer h2 {
+    font-size: 36px;
+  }
+}
+
 
 
 
